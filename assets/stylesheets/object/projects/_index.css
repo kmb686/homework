@@ -1,0 +1,82 @@
+/* 共通スタイルは外に書く */
+.article {
+  margin: auto;
+  padding: 25px;
+}
+
+.article__inner {
+  padding: 25px;
+  border: 1px solid #000;
+  font-size: 18px;
+  font-family: "Roboto";
+  letter-spacing: 1px;
+}
+.article__wrap li:nth-child(n + 2) {
+  margin-top: 50px;
+}
+
+.heading__ttl {
+  font-weight: bold;
+}
+
+.business__txt:nth-child(n + 2) {
+  margin-top: 15px;
+}
+.business__detail dl:nth-of-type(n + 2) > dt {
+  margin-top: 30px;
+}
+.business__detail dt {
+  font-weight: bold;
+}
+.business__detail dd {
+  margin-top: 15px;
+}
+
+.business__operation {
+  margin-top: 30px;
+}
+.business__link {
+  color: #312af0;
+  font-size: 17px;
+}
+.business__underLine {
+  text-decoration: underline solid black;
+}
+
+.access__link {
+  color: #312af0;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 796px) {
+  /* pc用スタイル */
+  .article {
+    max-width: 980px;
+  }
+  .article__wrap li {
+    display: flex;
+  }
+
+  .heading {
+    margin-right: 90px;
+  }
+  .heading__ttl {
+    width: 80px;
+  }
+  .business__hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  /* sp用スタイル */
+  .article {
+    width: 95%;
+  }
+  .heading {
+    margin-bottom: 15px;
+  }
+  .cooperative__detail {
+    word-break: break-all;
+  }
+}

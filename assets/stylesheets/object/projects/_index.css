@@ -1,4 +1,8 @@
 /* 共通スタイルは外に書く */
+body {
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
 .article {
   margin: auto;
   padding: 25px;
@@ -8,7 +12,7 @@
   padding: 25px;
   border: 1px solid #000;
   font-size: 18px;
-  font-family: "Roboto";
+  font-family: "Roboto-Regular";
   letter-spacing: 1px;
 }
 .article__wrap li:nth-child(n + 2) {
